@@ -28,6 +28,7 @@
         <nav class="main-nav">
             <a href="<?= $link->url('home.index') ?>">Domov</a>
             <a href="<?= $link->url('schedule.index') ?>">Úprava rozvrhu</a>
+            <a href="<?= $link->url('course.index') ?>">Predmety</a>
         </nav>
         <div class="user-info">
             <span>Meno Priezvisko</span>

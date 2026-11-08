@@ -22,7 +22,7 @@
                 <h3>Získať prehľad predmetov</h3>
                 <p>Prezrite si dostupné predmety pre tento semester a ich časové termíny a miestnosti.</p>
             </div>
-            <a href="#" class="btn btn-secondary">Katalóg predmetov</a>
+            <a href="<?= $link->url('course.index') ?>" class="btn">Katalóg predmetov</a>
         </div>
         <div class="card">
             <div>
