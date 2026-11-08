@@ -3,37 +3,32 @@
 /** @var \Framework\Support\LinkGenerator $link */
 ?>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col mt-5">
-            <div class="text-center">
-                <h2>Vaííčko MVC FW</h2>
-                <h3>Version <?= App\Configuration::FW_VERSION ?></h3>
-                <img src="<?= $link->asset('images/vaiicko_logo.png') ?>" alt="Framework Logo">
-                <p>
-                    Congratulations, you have successfully installed and run the framework
-                    <strong>Vaííčko</strong> <?= App\Configuration::FW_VERSION ?>!<br>
-                    We hope that you will create a great application using this framework.<br>
-                </p>
-                <p>
-                    This simple framework was created for teaching purposes and to better understand how the MVC
-                    architecture works.<br>
-                    It is intended for students of the subject <em>web application development</em>, but not only
-                    for them.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col text-center">
-            <h4>Authors</h4>
+<div class="main-container container">
+    <section class="page-title">
+        <h2>Prehľad rozvrhu</h2>
+        <p>Vitajte v systéme pre správu rozvrhov.</p>
+    </section>
+
+    <section class="cards-grid">
+        <div class="card">
             <div>
-                <a href="mailto:Patrik.Hrkut@fri.uniza.sk">doc. Ing. Patrik Hrkút, PhD.</a><br>
-                <a href="mailto:Michal.Duracik@fri.uniza.sk">Ing. Michal Ďuračík, PhD.</a><br>
-                <a href="mailto:Matej.Mesko@fri.uniza.sk">Ing. Matej Meško, PhD.</a><br><br>
-                &copy; 2020-<?= date('Y') ?> University of Žilina, Faculty of Management Science and Informatics,
-                Department of Software Technologies
+                <h3>Môj aktuálny rozvrh</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque odio lorem, laoreet at cursus sed, congue et eros.</p>
+            </div>
+            <a href="<?= $link->url('schedule.index') ?>" class="btn">Prejsť na úpravu rozvrhu</a>
+        </div>
+        <div class="card">
+            <div>
+                <h3>Získať prehľad predmetov</h3>
+                <p>Prezrite si dostupné predmety pre tento semester a ich časové termíny a miestnosti.</p>
+            </div>
+            <a href="#" class="btn btn-secondary">Katalóg predmetov</a>
+        </div>
+        <div class="card">
+            <div>
+                <h3>Oznámenia a zmeny</h3>
+                <p>Žiadne nové zmeny v rozvrhu pre tento týždeň.</p>
             </div>
         </div>
-    </div>
+    </section>
 </div>
